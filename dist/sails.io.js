@@ -1196,13 +1196,13 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      */
     SailsSocket.prototype.off = function (evName, fn){
 
-      // Bind the event to the raw underlying socket if possible.
+      // Unbind the event from the raw underlying socket if possible.
       if (this._raw) {
         this._raw.off(evName, fn);
         return this;
       }
 
-      // Otherwise queue the event binding.
+      // Otherwise unqueue the queued event binding.
       if (this.eventQueue[evName] && this.eventQueue[evName].indexOf(fn) > -1) {
         this.eventQueue[evName].splice(this.eventQueue[evName].indexOf(fn), 1);
       }
@@ -1231,6 +1231,50 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
     };
 
     /**
+     * @description Make the API call easier
+     * @param {*} url 
+     * @param {*} data 
+     * @param {*} verb 
+     * @returns {Promise}
+     */
+    function PromiseMe(url, data, verb) {
+      let $$ = io.socket;
+      return new Promise((resolve, reject) => {
+        var serializeObj = {};
+        // change the argin verb for data ...
+        // can use RegExp to match more verbs
+        verb == "get"
+          ? (serializeObj["params"] = data)
+          : (serializeObj["data"] = data);
+        serializeObj.url = url;
+        serializeObj.method = verb;
+        $$.request(serializeObj, (data, jwr)/** : Promise<any> */ => {
+          // interceptors can be used here :smile:
+          if (jwr.error) {
+            reject(jwr)
+          } else { 
+            resolve([data, jwr]) };
+        });
+      });
+    }
+
+
+    /**
+     * Simulate a POST request to sails
+     * e.g.
+     *    `socket.post('/event', newMeeting).then(([data, jwr])=>{})`
+     *
+     * @api public
+     * @param {String} url    ::    destination URL
+     * @param {Object} data   ::    parameters to send with the request [optional]
+     * @returns {Promise}     ::    where promise is ([data, jwr])
+     */
+
+    SailsSocket.prototype.post = function (url, data) {
+      return PromiseMe(url, data, "post");
+    };
+
+    /**
      * Simulate a GET request to sails
      * e.g.
      *    `socket.get('/user/3', Stats.populate)`
@@ -1238,52 +1282,11 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      * @api public
      * @param {String} url    ::    destination URL
      * @param {Object} data   ::    parameters to send with the request [optional]
-     * @param {Function} cb   ::    callback function to call when finished [optional]
+     * @returns {Promise}     ::    where promise is ([data, jwr])
      */
-
-    SailsSocket.prototype.get = function(url, data, cb) {
-
-      // `data` is optional
-      if (typeof data === 'function') {
-        cb = data;
-        data = {};
-      }
-
-      return this.request({
-        method: 'get',
-        params: data,
-        url: url
-      }, cb);
+    SailsSocket.prototype.get = function (url, data) {
+      return PromiseMe(url, data, "get");
     };
-
-
-
-    /**
-     * Simulate a POST request to sails
-     * e.g.
-     *    `socket.post('/event', newMeeting, $spinner.hide)`
-     *
-     * @api public
-     * @param {String} url    ::    destination URL
-     * @param {Object} data   ::    parameters to send with the request [optional]
-     * @param {Function} cb   ::    callback function to call when finished [optional]
-     */
-
-    SailsSocket.prototype.post = function(url, data, cb) {
-
-      // `data` is optional
-      if (typeof data === 'function') {
-        cb = data;
-        data = {};
-      }
-
-      return this.request({
-        method: 'post',
-        data: data,
-        url: url
-      }, cb);
-    };
-
 
 
     /**
@@ -1294,49 +1297,25 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      * @api public
      * @param {String} url    ::    destination URL
      * @param {Object} data   ::    parameters to send with the request [optional]
-     * @param {Function} cb   ::    callback function to call when finished [optional]
+     * @returns {Promise}     ::    where promise is ([data, jwr])
      */
 
-    SailsSocket.prototype.put = function(url, data, cb) {
-
-      // `data` is optional
-      if (typeof data === 'function') {
-        cb = data;
-        data = {};
-      }
-
-      return this.request({
-        method: 'put',
-        params: data,
-        url: url
-      }, cb);
+    SailsSocket.prototype.put = function (url, data) {
+      return PromiseMe(url, data, "put");
     };
 
-
-    /**
+     /**
      * Simulate a PATCH request to sails
      * e.g.
-     *    `socket.patch('/event/3', changedFields, $spinner.hide)`
+     *    `socket.patch('/event/3', changedFields)`
      *
      * @api public
      * @param {String} url    ::    destination URL
      * @param {Object} data   ::    parameters to send with the request [optional]
-     * @param {Function} cb   ::    callback function to call when finished [optional]
+     * @returns {Promise}     ::    where promise is ([data, jwr])
      */
-
-    SailsSocket.prototype.patch = function(url, data, cb) {
-
-      // `data` is optional
-      if (typeof data === 'function') {
-        cb = data;
-        data = {};
-      }
-
-      return this.request({
-        method: 'patch',
-        params: data,
-        url: url
-      }, cb);
+    SailsSocket.prototype.patch = function (url, data) {
+      return PromiseMe(url, data, "patch");
     };
 
     /**
@@ -1347,23 +1326,13 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      * @api public
      * @param {String} url    ::    destination URL
      * @param {Object} data   ::    parameters to send with the request [optional]
-     * @param {Function} cb   ::    callback function to call when finished [optional]
+     * @returns {Promise}     ::    where promise is ([data, jwr])
      */
 
-    SailsSocket.prototype['delete'] = function(url, data, cb) {
-
-      // `data` is optional
-      if (typeof data === 'function') {
-        cb = data;
-        data = {};
-      }
-
-      return this.request({
-        method: 'delete',
-        params: data,
-        url: url
-      }, cb);
+    SailsSocket.prototype.delete = function (url, data) {
+      return PromiseMe(url, data, "delete");
     };
+
 
 
 
