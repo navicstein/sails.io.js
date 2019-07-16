@@ -1,19 +1,19 @@
 //////////////////////////////////////////////////////////////////////////////////////
- //                                                                                //
- //  ███████╗ █████╗ ██╗██╗     ███████╗   ██╗ ██████╗         ██╗███████╗         //
- //  ██╔════╝██╔══██╗██║██║     ██╔════╝   ██║██╔═══██╗        ██║██╔════╝         //
- //  ███████╗███████║██║██║     ███████╗   ██║██║   ██║        ██║███████╗         //
- //  ╚════██║██╔══██║██║██║     ╚════██║   ██║██║   ██║   ██   ██║╚════██║         //
- //  ███████║██║  ██║██║███████╗███████║██╗██║╚██████╔╝██╗╚█████╔╝███████║         //
- //  ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚═╝╚═╝ ╚═════╝ ╚═╝ ╚════╝ ╚══════╝         //
- //                                                                                //
- //   ╦╔═╗╦  ╦╔═╗╔═╗╔═╗╦═╗╦╔═╗╔╦╗  ╔═╗╦  ╦╔═╗╔╗╔╔╦╗  ╔═╗╔╦╗╦╔═                     //
- //   ║╠═╣╚╗╔╝╠═╣╚═╗║  ╠╦╝║╠═╝ ║   ║  ║  ║║╣ ║║║ ║   ╚═╗ ║║╠╩╗                     //
- //  ╚╝╩ ╩ ╚╝ ╩ ╩╚═╝╚═╝╩╚═╩╩   ╩   ╚═╝╩═╝╩╚═╝╝╚╝ ╩   ╚═╝═╩╝╩ ╩                     //
- //  ┌─┐┌─┐┬─┐  ┌┐┌┌─┐┌┬┐┌─┐  ┬┌─┐  ┌─┐┌┐┌┌┬┐  ┌┬┐┬ ┬┌─┐  ┌┐ ┬─┐┌─┐┬ ┬┌─┐┌─┐┬─┐    //
- //  ├┤ │ │├┬┘  ││││ │ ││├┤   │└─┐  ├─┤│││ ││   │ ├─┤├┤   ├┴┐├┬┘│ ││││└─┐├┤ ├┬┘    //
- //  └  └─┘┴└─  ┘└┘└─┘─┴┘└─┘o└┘└─┘  ┴ ┴┘└┘─┴┘   ┴ ┴ ┴└─┘  └─┘┴└─└─┘└┴┘└─┘└─┘┴└─    //
- //                                                                                //
+//                                                                                //
+//  ███████╗ █████╗ ██╗██╗     ███████╗   ██╗ ██████╗         ██╗███████╗         //
+//  ██╔════╝██╔══██╗██║██║     ██╔════╝   ██║██╔═══██╗        ██║██╔════╝         //
+//  ███████╗███████║██║██║     ███████╗   ██║██║   ██║        ██║███████╗         //
+//  ╚════██║██╔══██║██║██║     ╚════██║   ██║██║   ██║   ██   ██║╚════██║         //
+//  ███████║██║  ██║██║███████╗███████║██╗██║╚██████╔╝██╗╚█████╔╝███████║         //
+//  ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚═╝╚═╝ ╚═════╝ ╚═╝ ╚════╝ ╚══════╝         //
+//                                                                                //
+//   ╦╔═╗╦  ╦╔═╗╔═╗╔═╗╦═╗╦╔═╗╔╦╗  ╔═╗╦  ╦╔═╗╔╗╔╔╦╗  ╔═╗╔╦╗╦╔═                     //
+//   ║╠═╣╚╗╔╝╠═╣╚═╗║  ╠╦╝║╠═╝ ║   ║  ║  ║║╣ ║║║ ║   ╚═╗ ║║╠╩╗                     //
+//  ╚╝╩ ╩ ╚╝ ╩ ╩╚═╝╚═╝╩╚═╩╩   ╩   ╚═╝╩═╝╩╚═╝╝╚╝ ╩   ╚═╝═╩╝╩ ╩                     //
+//  ┌─┐┌─┐┬─┐  ┌┐┌┌─┐┌┬┐┌─┐  ┬┌─┐  ┌─┐┌┐┌┌┬┐  ┌┬┐┬ ┬┌─┐  ┌┐ ┬─┐┌─┐┬ ┬┌─┐┌─┐┬─┐    //
+//  ├┤ │ │├┬┘  ││││ │ ││├┤   │└─┐  ├─┤│││ ││   │ ├─┤├┤   ├┴┐├┬┘│ ││││└─┐├┤ ├┬┘    //
+//  └  └─┘┴└─  ┘└┘└─┘─┴┘└─┘o└┘└─┘  ┴ ┴┘└┘─┴┘   ┴ ┴ ┴└─┘  └─┘┴└─└─┘└┴┘└─┘└─┘┴└─    //
+//                                                                                //
 //////////////////////////////////////////////////////////////////////////////////////
 
 /**
@@ -39,10 +39,7 @@
  *    `socket.post( url, [data], [cb] )`
  */
 
-
 (function() {
-
-
   //   ██████╗ ██████╗ ███╗   ██╗███████╗████████╗ █████╗ ███╗   ██╗████████╗███████╗
   //  ██╔════╝██╔═══██╗████╗  ██║██╔════╝╚══██╔══╝██╔══██╗████╗  ██║╚══██╔══╝██╔════╝
   //  ██║     ██║   ██║██╔██╗ ██║███████╗   ██║   ███████║██╔██╗ ██║   ██║   ███████╗
@@ -51,7 +48,6 @@
   //   ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝
   //
 
-
   /**
    * Constant containing the names of all available options
    * for individual sockets.
@@ -59,23 +55,22 @@
    * @type {Array}
    */
   var SOCKET_OPTIONS = [
-    'useCORSRouteToGetCookie',
-    'url',
-    'multiplex',
-    'transports',
-    'query',
-    'path',
-    'headers',
-    'initialConnectionHeaders',
-    'reconnection',
-    'reconnectionAttempts',
-    'reconnectionDelay',
-    'reconnectionDelayMax',
-    'rejectUnauthorized',
-    'randomizationFactor',
-    'timeout'
+    "useCORSRouteToGetCookie",
+    "url",
+    "multiplex",
+    "transports",
+    "query",
+    "path",
+    "headers",
+    "initialConnectionHeaders",
+    "reconnection",
+    "reconnectionAttempts",
+    "reconnectionDelay",
+    "reconnectionDelayMax",
+    "rejectUnauthorized",
+    "randomizationFactor",
+    "timeout"
   ];
-
 
   /**
    * Constant containing the names of properties on `io.sails` which
@@ -87,17 +82,14 @@
    * (this is unused if loading from node.js)
    */
   var CONFIGURABLE_VIA_HTML_ATTR = [
-    'autoConnect',
-    'reconnection',
-    'environment',
-    'headers',
-    'url',
-    'transports',
-    'path'
+    "autoConnect",
+    "reconnection",
+    "environment",
+    "headers",
+    "url",
+    "transports",
+    "path"
   ];
-
-
-
 
   /**
    * Constant containing the names of querystring
@@ -106,11 +98,10 @@
    * @type {Dictionary}
    */
   var CONNECTION_METADATA_PARAMS = {
-    version: '__sails_io_sdk_version',
-    platform: '__sails_io_sdk_platform',
-    language: '__sails_io_sdk_language'
+    version: "__sails_io_sdk_version",
+    platform: "__sails_io_sdk_platform",
+    language: "__sails_io_sdk_language"
   };
-
 
   /**
    * Constant containing metadata about the platform, language, and
@@ -119,14 +110,13 @@
    * @type {Dictionary}
    */
   var SDK_INFO = {
-    version: '1.2.1', // <-- pulled automatically from package.json, do not change!
-    language: 'javascript',
-    platform: (function (){
-      if (typeof module === 'object' && typeof module.exports !== 'undefined') {
-        return 'node';
-      }
-      else {
-        return 'browser';
+    version: "1.2.1", // <-- pulled automatically from package.json, do not change!
+    language: "javascript",
+    platform: (function() {
+      if (typeof module === "object" && typeof module.exports !== "undefined") {
+        return "node";
+      } else {
+        return "browser";
       }
     })()
   };
@@ -134,12 +124,17 @@
   // Build `versionString` (a querystring snippet) by
   // combining SDK_INFO and CONNECTION_METADATA_PARAMS.
   SDK_INFO.versionString =
-    CONNECTION_METADATA_PARAMS.version + '=' + SDK_INFO.version + '&' +
-    CONNECTION_METADATA_PARAMS.platform + '=' + SDK_INFO.platform + '&' +
-    CONNECTION_METADATA_PARAMS.language + '=' + SDK_INFO.language;
-
-
-
+    CONNECTION_METADATA_PARAMS.version +
+    "=" +
+    SDK_INFO.version +
+    "&" +
+    CONNECTION_METADATA_PARAMS.platform +
+    "=" +
+    SDK_INFO.platform +
+    "&" +
+    CONNECTION_METADATA_PARAMS.language +
+    "=" +
+    SDK_INFO.language;
 
   //   █████╗ ██████╗ ███████╗ ██████╗ ██████╗ ██████╗     ██╗  ██╗████████╗███╗   ███╗██╗
   //  ██╔══██╗██╔══██╗██╔════╝██╔═══██╗██╔══██╗██╔══██╗    ██║  ██║╚══██╔══╝████╗ ████║██║
@@ -170,24 +165,24 @@
   // HTML attributes, as well as grabbing hold of the URL from whence the SDK was fetched.
   var thisScriptTag = (function() {
     if (
-      typeof window !== 'object' ||
-      typeof window.document !== 'object' ||
-      typeof window.document.getElementsByTagName !== 'function'
+      typeof window !== "object" ||
+      typeof window.document !== "object" ||
+      typeof window.document.getElementsByTagName !== "function"
     ) {
       return null;
     }
 
     // Return the URL of the last script loaded (i.e. this one)
     // (this must run before nextTick; see http://stackoverflow.com/a/2976714/486547)
-    var allScriptsCurrentlyInDOM = window.document.getElementsByTagName('script');
+    var allScriptsCurrentlyInDOM = window.document.getElementsByTagName(
+      "script"
+    );
     return allScriptsCurrentlyInDOM[allScriptsCurrentlyInDOM.length - 1];
   })();
 
-
   // Variables to contain src URL and other script tag config (for use below).
-  var urlThisScriptWasFetchedFrom = '';
+  var urlThisScriptWasFetchedFrom = "";
   var scriptTagConfig = {};
-
 
   if (thisScriptTag) {
     // Save the URL that this script was fetched from.
@@ -208,22 +203,24 @@
     //  it using `data-`. If you are using the `data-` prefixed version
     //  for some other purpose... well, in that case you'll just have to
     //  configure programmatically using `io.sails` instead.)
-    CONFIGURABLE_VIA_HTML_ATTR.forEach(function (configKey){
-
-      scriptTagConfig[configKey] = (function (){
-
+    CONFIGURABLE_VIA_HTML_ATTR.forEach(function(configKey) {
+      scriptTagConfig[configKey] = (function() {
         // Support 'data-' prefixed or normal attributes.
         // (prefixed versions take precedence if provided)
-        var htmlAttrVal = thisScriptTag.getAttribute( 'data-'+configKey );
+        var htmlAttrVal = thisScriptTag.getAttribute("data-" + configKey);
         if (!htmlAttrVal) {
-          htmlAttrVal = thisScriptTag.getAttribute( configKey );
+          htmlAttrVal = thisScriptTag.getAttribute(configKey);
         }
 
         // The HTML attribute value should always be a string or `null`.
         // We'll try to parse it as JSON and use that, but worst case fall back
         // to the default situation of it being a string.
-        if (typeof htmlAttrVal === 'string') {
-          try { return JSON.parse(htmlAttrVal); } catch (e) { return htmlAttrVal; }
+        if (typeof htmlAttrVal === "string") {
+          try {
+            return JSON.parse(htmlAttrVal);
+          } catch (e) {
+            return htmlAttrVal;
+          }
         }
         // If `null` was returned from getAttribute(), it means that the HTML attribute
         // was not specified, so we treat it as undefined (which will cause the property
@@ -235,69 +232,93 @@
         // - if no quotes are used in the HTML attribute, it still comes in as a string.
         // - if no RHS is provided for the attribute, it still comes in as "" (empty string)
         // (but we still handle this with an explicit error just in case--for debugging and support purposes)
-        else throw new Error('sails.io.js :: Unexpected/invalid script tag configuration for `'+configKey+'`: `'+htmlAttrVal+'` (a `'+typeof htmlAttrVal+'`). Should be a string.');
+        else
+          throw new Error(
+            "sails.io.js :: Unexpected/invalid script tag configuration for `" +
+              configKey +
+              "`: `" +
+              htmlAttrVal +
+              "` (a `" +
+              typeof htmlAttrVal +
+              "`). Should be a string."
+          );
       })();
 
-      if (scriptTagConfig[configKey] === undefined){
+      if (scriptTagConfig[configKey] === undefined) {
         delete scriptTagConfig[configKey];
       }
     });
-
-
 
     // Now that they've been parsed, do an extremely lean version of
     // logical type validation/coercion of provided values.
     //////////////////////////////////////////////////////////////////
 
     // `autoConnect`
-    if (typeof scriptTagConfig.autoConnect !== 'undefined') {
-      if (scriptTagConfig.autoConnect === '') {
+    if (typeof scriptTagConfig.autoConnect !== "undefined") {
+      if (scriptTagConfig.autoConnect === "") {
         // Special case for empty string.  It means `true` (see above).
         scriptTagConfig.autoConnect = true;
-      }
-      else if (typeof scriptTagConfig.autoConnect !== 'boolean') {
-        throw new Error('sails.io.js :: Unexpected/invalid configuration for `autoConnect` provided in script tag: `'+scriptTagConfig.autoConnect+'` (a `'+typeof scriptTagConfig.autoConnect+'`). Should be a boolean.');
+      } else if (typeof scriptTagConfig.autoConnect !== "boolean") {
+        throw new Error(
+          "sails.io.js :: Unexpected/invalid configuration for `autoConnect` provided in script tag: `" +
+            scriptTagConfig.autoConnect +
+            "` (a `" +
+            typeof scriptTagConfig.autoConnect +
+            "`). Should be a boolean."
+        );
       }
     }
-
 
     // `environment`
-    if (typeof scriptTagConfig.environment !== 'undefined') {
-      if (typeof scriptTagConfig.environment !== 'string') {
-        throw new Error('sails.io.js :: Unexpected/invalid configuration for `environment` provided in script tag: `'+scriptTagConfig.environment+'` (a `'+typeof scriptTagConfig.environment+'`). Should be a string.');
+    if (typeof scriptTagConfig.environment !== "undefined") {
+      if (typeof scriptTagConfig.environment !== "string") {
+        throw new Error(
+          "sails.io.js :: Unexpected/invalid configuration for `environment` provided in script tag: `" +
+            scriptTagConfig.environment +
+            "` (a `" +
+            typeof scriptTagConfig.environment +
+            "`). Should be a string."
+        );
       }
     }
-
 
     // `headers`
-    if (typeof scriptTagConfig.headers !== 'undefined') {
-      if (typeof scriptTagConfig.headers !== 'object' || Array.isArray(scriptTagConfig.headers)) {
-        throw new Error('sails.io.js :: Unexpected/invalid configuration for `headers` provided in script tag: `'+scriptTagConfig.headers+'` (a `'+typeof scriptTagConfig.headers+'`). Should be a JSON-compatible dictionary (i.e. `{}`).  Don\'t forget those double quotes (""), even on key names!  Use single quotes (\'\') to wrap the HTML attribute value; e.g. `headers=\'{"X-Auth": "foo"}\'`');
+    if (typeof scriptTagConfig.headers !== "undefined") {
+      if (
+        typeof scriptTagConfig.headers !== "object" ||
+        Array.isArray(scriptTagConfig.headers)
+      ) {
+        throw new Error(
+          "sails.io.js :: Unexpected/invalid configuration for `headers` provided in script tag: `" +
+            scriptTagConfig.headers +
+            "` (a `" +
+            typeof scriptTagConfig.headers +
+            '`). Should be a JSON-compatible dictionary (i.e. `{}`).  Don\'t forget those double quotes (""), even on key names!  Use single quotes (\'\') to wrap the HTML attribute value; e.g. `headers=\'{"X-Auth": "foo"}\'`'
+        );
       }
     }
 
-
     // `url`
-    if (typeof scriptTagConfig.url !== 'undefined') {
-      if (typeof scriptTagConfig.url !== 'string') {
-        throw new Error('sails.io.js :: Unexpected/invalid configuration for `url` provided in script tag: `'+scriptTagConfig.url+'` (a `'+typeof scriptTagConfig.url+'`). Should be a string.');
+    if (typeof scriptTagConfig.url !== "undefined") {
+      if (typeof scriptTagConfig.url !== "string") {
+        throw new Error(
+          "sails.io.js :: Unexpected/invalid configuration for `url` provided in script tag: `" +
+            scriptTagConfig.url +
+            "` (a `" +
+            typeof scriptTagConfig.url +
+            "`). Should be a string."
+        );
       }
     }
 
     // OTHER `io.sails` options are NOT CURRENTLY SUPPORTED VIA HTML ATTRIBUTES.
   }
 
-
-
-
   // Grab a reference to the global socket.io client (if one is available).
   // This is used via closure below to determine which `io` to use when the
   // socket.io client instance (`io`) is augmented to become the Sails client
   // SDK instance (still `io`).
-  var _existingGlobalSocketIO = (typeof io !== 'undefined') ? io : undefined;
-
-
-
+  var _existingGlobalSocketIO = typeof io !== "undefined" ? io : undefined;
 
   //////////////////////////////////////////////////////////////
   /////
@@ -308,8 +329,6 @@
   /////
   //////////////////////////////////////////////////////////////
   //
-
-
 
   //  ███████╗ █████╗ ██╗██╗     ███████╗      ██╗ ██████╗        ██████╗██╗     ██╗███████╗███╗   ██╗████████╗
   //  ██╔════╝██╔══██╗██║██║     ██╔════╝      ██║██╔═══██╗      ██╔════╝██║     ██║██╔════╝████╗  ██║╚══██╔══╝
@@ -341,7 +360,6 @@
    */
 
   function SailsIOClient(_providedSocketIO) {
-
     // First, determine which `io` we're augmenting.
     //
     // Prefer the passed-in `io` instance, but fall back to the
@@ -349,22 +367,24 @@
     var io;
     if (_providedSocketIO) {
       io = _providedSocketIO;
-    }
-    else {
+    } else {
       io = _existingGlobalSocketIO;
     }
     // (note that for readability, we deliberately do not short circuit or use the tertiary operator above)
 
-
     // If a socket.io client (`io`) is not available, none of this will work.
     if (!io) {
       // If node:
-      if (SDK_INFO.platform === 'node') {
-        throw new Error('No socket.io client available.  When requiring `sails.io.js` from Node.js, a socket.io client (`io`) must be passed in; e.g.:\n```\nvar io = require(\'sails.io.js\')( require(\'socket.io-client\') )\n```\n(see https://github.com/balderdashy/sails.io.js/tree/master/test for more examples)');
+      if (SDK_INFO.platform === "node") {
+        throw new Error(
+          "No socket.io client available.  When requiring `sails.io.js` from Node.js, a socket.io client (`io`) must be passed in; e.g.:\n```\nvar io = require('sails.io.js')( require('socket.io-client') )\n```\n(see https://github.com/balderdashy/sails.io.js/tree/master/test for more examples)"
+        );
       }
       // Otherwise, this is a web browser:
       else {
-        throw new Error('The Sails socket SDK depends on the socket.io client, but the socket.io global (`io`) was not available when `sails.io.js` loaded.  Normally, the socket.io client code is bundled with sails.io.js, so something is a little off.  Please check to be sure this version of `sails.io.js` has the minified Socket.io client at the top of the file.');
+        throw new Error(
+          "The Sails socket SDK depends on the socket.io client, but the socket.io global (`io`) was not available when `sails.io.js` loaded.  Normally, the socket.io client code is bundled with sails.io.js, so something is a little off.  Please check to be sure this version of `sails.io.js` has the minified Socket.io client at the top of the file."
+        );
       }
     }
 
@@ -372,15 +392,18 @@
     // (i.e. if it already has a `.sails` property) then throw an error.
     if (io.sails) {
       // If node:
-      if (SDK_INFO.platform === 'node') {
-        throw new Error('The provided socket.io client (`io`) has already been augmented into a Sails socket SDK instance (it has `io.sails`).');
+      if (SDK_INFO.platform === "node") {
+        throw new Error(
+          "The provided socket.io client (`io`) has already been augmented into a Sails socket SDK instance (it has `io.sails`)."
+        );
       }
       // Otherwise, this is a web browser:
       else {
-        throw new Error('The socket.io client (`io`) has already been augmented into a Sails socket SDK instance.  Usually, this means you are bringing `sails.io.js` onto the page more than once.');
+        throw new Error(
+          "The socket.io client (`io`) has already been augmented into a Sails socket SDK instance.  Usually, this means you are bringing `sails.io.js` onto the page more than once."
+        );
       }
     }
-
 
     /**
      * A little logger for this library to use internally.
@@ -397,9 +420,9 @@
 
       // If `console.log` is not accessible, `log` is a noop.
       if (
-        typeof console !== 'object' ||
-        typeof console.log !== 'function' ||
-        typeof console.log.bind !== 'function'
+        typeof console !== "object" ||
+        typeof console.log !== "function" ||
+        typeof console.log.bind !== "function"
       ) {
         return function noop() {};
       }
@@ -408,28 +431,24 @@
         var args = Array.prototype.slice.call(arguments);
 
         // All logs are disabled when `io.sails.environment = 'production'`.
-        if (io.sails.environment === 'production') return;
+        if (io.sails.environment === "production") return;
 
         // Add prefix to log messages (unless disabled)
-        var PREFIX = '';
+        var PREFIX = "";
         if (options.prefix) {
           args.unshift(PREFIX);
         }
 
         // Call wrapped logger
-        console.log
-          .bind(console)
-          .apply(this, args);
+        console.log.bind(console).apply(this, args);
       };
-    }//</LoggerFactory>
+    } //</LoggerFactory>
 
     // Create a private logger instance
     var consolog = LoggerFactory();
     consolog.noPrefix = LoggerFactory({
       prefix: false
     });
-
-
 
     /**
      * What is the `requestQueue`?
@@ -442,17 +461,16 @@
      * @param  {SailsSocket}  socket
      */
 
-    function runRequestQueue (socket) {
+    function runRequestQueue(socket) {
       var queue = socket.requestQueue;
 
       if (!queue) return;
       for (var i in queue) {
-
         // Double-check that `queue[i]` will not
         // inadvertently discover extra properties attached to the Object
         // and/or Array prototype by other libraries/frameworks/tools.
         // (e.g. Ember does this. See https://github.com/balderdashy/sails.io.js/pull/5)
-        var isSafeToDereference = ({}).hasOwnProperty.call(queue, i);
+        var isSafeToDereference = {}.hasOwnProperty.call(queue, i);
         if (isSafeToDereference) {
           // Get the arguments that were originally made to the "request" method
           var requestArgs = queue[i];
@@ -465,8 +483,6 @@
       socket.requestQueue = null;
     }
 
-
-
     /**
      * Send a JSONP request.
      *
@@ -478,29 +494,25 @@
     function jsonp(opts, cb) {
       opts = opts || {};
 
-      if (typeof window === 'undefined') {
+      if (typeof window === "undefined") {
         // FUTURE: refactor node usage to live in here
         return cb();
       }
 
-      var scriptEl = document.createElement('script');
+      var scriptEl = document.createElement("script");
       window._sailsIoJSConnect = function(response) {
         // In rare circumstances our script may have been vaporised.
         // Remove it, but only if it still exists
         // https://github.com/balderdashy/sails.io.js/issues/92
         if (scriptEl && scriptEl.parentNode) {
-            scriptEl.parentNode.removeChild(scriptEl);
+          scriptEl.parentNode.removeChild(scriptEl);
         }
 
         cb(response);
       };
       scriptEl.src = opts.url;
-      document.getElementsByTagName('head')[0].appendChild(scriptEl);
-
+      document.getElementsByTagName("head")[0].appendChild(scriptEl);
     }
-
-
-
 
     //       ██╗███████╗ ██████╗ ███╗   ██╗      ██╗    ██╗███████╗██████╗ ███████╗ ██████╗  ██████╗██╗  ██╗███████╗████████╗
     //       ██║██╔════╝██╔═══██╗████╗  ██║      ██║    ██║██╔════╝██╔══██╗██╔════╝██╔═══██╗██╔════╝██║ ██╔╝██╔════╝╚══██╔══╝
@@ -532,18 +544,20 @@
     function JWR(responseCtx) {
       this.body = responseCtx.body;
       this.headers = responseCtx.headers || {};
-      this.statusCode = (typeof responseCtx.statusCode === 'undefined') ? 200 : responseCtx.statusCode;
+      this.statusCode =
+        typeof responseCtx.statusCode === "undefined"
+          ? 200
+          : responseCtx.statusCode;
       // FUTURE: Replace this typeof short-circuit with an assertion (statusCode should always be set)
 
       if (this.statusCode < 200 || this.statusCode >= 400) {
         // Determine the appropriate error message.
         var msg;
         if (this.statusCode === 0) {
-          msg = 'The socket request failed.';
-        }
-        else {
-          msg = 'Server responded with a ' + this.statusCode + ' status code';
-          msg += ':\n```\n' + JSON.stringify(this.body, null, 2) + '\n```';
+          msg = "The socket request failed.";
+        } else {
+          msg = "Server responded with a " + this.statusCode + " status code";
+          msg += ":\n```\n" + JSON.stringify(this.body, null, 2) + "\n```";
           // (^^Note that we should always be able to rely on socket.io to give us
           // non-circular data here, so we don't have to worry about wrapping the
           // above in a try...catch)
@@ -554,10 +568,18 @@
       }
     }
     JWR.prototype.toString = function() {
-      return '[ResponseFromSails]' + '  -- ' +
-        'Status: ' + this.statusCode + '  -- ' +
-        'Headers: ' + this.headers + '  -- ' +
-        'Body: ' + this.body;
+      return (
+        "[ResponseFromSails]" +
+        "  -- " +
+        "Status: " +
+        this.statusCode +
+        "  -- " +
+        "Headers: " +
+        this.headers +
+        "  -- " +
+        "Body: " +
+        this.body
+      );
     };
     JWR.prototype.toPOJO = function() {
       return {
@@ -568,11 +590,8 @@
     };
     JWR.prototype.pipe = function() {
       // FUTURE: look at substack's stuff
-      return new Error('Client-side streaming support not implemented yet.');
+      return new Error("Client-side streaming support not implemented yet.");
     };
-
-
-
 
     //          ███████╗███╗   ███╗██╗████████╗███████╗██████╗  ██████╗ ███╗   ███╗ ██╗██╗
     //          ██╔════╝████╗ ████║██║╚══██╔══╝██╔════╝██╔══██╗██╔═══██╗████╗ ████║██╔╝╚██╗
@@ -589,9 +608,10 @@
      */
 
     function _emitFrom(socket, requestCtx) {
-
       if (!socket._raw) {
-        throw new Error('Failed to emit from socket- raw SIO socket is missing.');
+        throw new Error(
+          "Failed to emit from socket- raw SIO socket is missing."
+        );
       }
 
       // Since callback is embedded in requestCtx,
@@ -603,8 +623,9 @@
       // ( === the request method or "verb", e.g. 'get', 'post', 'put', etc. )
       var sailsEndpoint = requestCtx.method;
 
-      socket._raw.emit(sailsEndpoint, requestCtx, function serverResponded(responseCtx) {
-
+      socket._raw.emit(sailsEndpoint, requestCtx, function serverResponded(
+        responseCtx
+      ) {
         // Send back (emulatedHTTPBody, jsonWebSocketResponse)
         if (cb && !requestCtx.calledCb) {
           cb(responseCtx.body, new JWR(responseCtx));
@@ -613,16 +634,13 @@
           // Remove the callback from the list.
           socket._responseCbs.splice(socket._responseCbs.indexOf(cb), 1);
           // Remove the context from the list.
-          socket._requestCtxs.splice(socket._requestCtxs.indexOf(requestCtx), 1);
+          socket._requestCtxs.splice(
+            socket._requestCtxs.indexOf(requestCtx),
+            1
+          );
         }
       });
     }
-
-
-
-
-
-
 
     //  ███████╗ █████╗ ██╗██╗     ███████╗███████╗ ██████╗  ██████╗██╗  ██╗███████╗████████╗
     //  ██╔════╝██╔══██╗██║██║     ██╔════╝██╔════╝██╔═══██╗██╔════╝██║ ██╔╝██╔════╝╚══██╔══╝
@@ -654,9 +672,9 @@
      * ```
      * ----------------------------------------------------------------------
      */
-    function SailsSocket (opts){
+    function SailsSocket(opts) {
       var self = this;
-      opts = opts||{};
+      opts = opts || {};
 
       // Initialize private properties
       self._isConnecting = false;
@@ -666,23 +684,42 @@
       var _opts = {};
       SOCKET_OPTIONS.forEach(function(option) {
         // Okay to change global headers while socket is connected
-        if (option == 'headers') {return;}
+        if (option == "headers") {
+          return;
+        }
         Object.defineProperty(self, option, {
           get: function() {
-            if (option == 'url') {
-              return _opts[option] || (self._raw && self._raw.io && self._raw.io.uri);
+            if (option == "url") {
+              return (
+                _opts[option] || (self._raw && self._raw.io && self._raw.io.uri)
+              );
             }
             return _opts[option];
           },
           set: function(value) {
             // Don't allow value to be changed while socket is connected
-            if (self.isConnected() && io.sails.strict !== false && value != _opts[option]) {
-              throw new Error('Cannot change value of `' + option + '` while socket is connected.');
+            if (
+              self.isConnected() &&
+              io.sails.strict !== false &&
+              value != _opts[option]
+            ) {
+              throw new Error(
+                "Cannot change value of `" +
+                  option +
+                  "` while socket is connected."
+              );
             }
             // If socket is attempting to reconnect, stop it.
-            if (self._raw && self._raw.io && self._raw.io.reconnecting && !self._raw.io.skipReconnect) {
+            if (
+              self._raw &&
+              self._raw.io &&
+              self._raw.io.reconnecting &&
+              !self._raw.io.skipReconnect
+            ) {
               self._raw.io.skipReconnect = true;
-              consolog('Stopping reconnect; use .reconnect() to connect socket after changing options.');
+              consolog(
+                "Stopping reconnect; use .reconnect() to connect socket after changing options."
+              );
             }
             _opts[option] = value;
           }
@@ -702,9 +739,11 @@
       // Listen for special `parseError` event sent from sockets hook on the backend
       // if an error occurs but a valid callback was not received from the client
       // (i.e. so the server had no other way to send back the error information)
-      self.on('sails:parseError', function (err){
-        consolog('Sails encountered an error parsing a socket message sent from this client, and did not have access to a callback function to respond with.');
-        consolog('Error details:',err);
+      self.on("sails:parseError", function(err) {
+        consolog(
+          "Sails encountered an error parsing a socket message sent from this client, and did not have access to a callback function to respond with."
+        );
+        consolog("Error details:", err);
       });
 
       // FUTURE:
@@ -713,9 +752,7 @@
       // However, note that the `console.log`s called before and after connection
       // are still forced to rely on our existing heuristics (to disable, tack #production
       // onto the URL used to fetch this file.)
-
-    }//</SailsSocket>
-
+    } //</SailsSocket>
 
     /**
      * `SailsSocket.prototype._connect()`
@@ -724,7 +761,7 @@
      *
      * @api private
      */
-    SailsSocket.prototype._connect = function (){
+    SailsSocket.prototype._connect = function() {
       var self = this;
 
       self._isConnecting = true;
@@ -734,7 +771,7 @@
       // See http://sailsjs.com/documentation/reference/web-sockets/socket-client/sails-socket/properties
       // for description of options and default values
       SOCKET_OPTIONS.forEach(function(option) {
-        if ('undefined' == typeof self[option]) {
+        if ("undefined" == typeof self[option]) {
           self[option] = io.sails[option];
         }
       });
@@ -745,44 +782,53 @@
       // For browser usage (currently works with "polling" transport only)
       self.transportOptions = self.transportOptions || {};
       self.transports.forEach(function(transport) {
-        self.transportOptions[transport] = self.transportOptions[transport] || {};
-        self.transportOptions[transport].extraHeaders = self.initialConnectionHeaders || {};
+        self.transportOptions[transport] =
+          self.transportOptions[transport] || {};
+        self.transportOptions[transport].extraHeaders =
+          self.initialConnectionHeaders || {};
       });
 
       // Log a warning if non-Node.js platform attempts to use `initialConnectionHeaders` for anything other than `polling`.
-      if (self.initialConnectionHeaders && SDK_INFO.platform !== 'node' && self.transports.indexOf('polling') === -1 || self.transports.length > 1) {
-        if (typeof console === 'object' && typeof console.warn === 'function') {
-          console.warn('When running in browser, `initialConnectionHeaders` option is only available for the `polling` transport.');
+      if (
+        (self.initialConnectionHeaders &&
+          SDK_INFO.platform !== "node" &&
+          self.transports.indexOf("polling") === -1) ||
+        self.transports.length > 1
+      ) {
+        if (typeof console === "object" && typeof console.warn === "function") {
+          console.warn(
+            "When running in browser, `initialConnectionHeaders` option is only available for the `polling` transport."
+          );
         }
       }
 
       // Ensure URL has no trailing slash
-      self.url = self.url ? self.url.replace(/(\/)$/, '') : undefined;
+      self.url = self.url ? self.url.replace(/(\/)$/, "") : undefined;
 
       // Mix the current SDK version into the query string in
       // the connection request to the server:
-      if (typeof self.query === 'string') {
+      if (typeof self.query === "string") {
         // (If provided as a string, trim leading question mark,
         // just in case one was provided.)
-        self.query = self.query.replace(/^\?/, '');
-        self.query += '&' + SDK_INFO.versionString;
-      }
-      else if (self.query && typeof self.query === 'object') {
-        throw new Error('`query` setting does not currently support configuration as a dictionary (`{}`).  Instead, it must be specified as a string like `foo=89&bar=hi`');
-      }
-      else if (!self.query) {
+        self.query = self.query.replace(/^\?/, "");
+        self.query += "&" + SDK_INFO.versionString;
+      } else if (self.query && typeof self.query === "object") {
+        throw new Error(
+          "`query` setting does not currently support configuration as a dictionary (`{}`).  Instead, it must be specified as a string like `foo=89&bar=hi`"
+        );
+      } else if (!self.query) {
         self.query = SDK_INFO.versionString;
-      }
-      else {
-        throw new Error('Unexpected data type provided for `query` setting: '+self.query);
+      } else {
+        throw new Error(
+          "Unexpected data type provided for `query` setting: " + self.query
+        );
       }
 
       // Determine whether this is a cross-origin socket by examining the
       // hostname and port on the `window.location` object.  If it's cross-origin,
       // we'll attempt to get a cookie for the domain so that a Sails session can
       // be established.
-      var isXOrigin = (function (){
-
+      var isXOrigin = (function() {
         // If `window` doesn't exist (i.e. being used from Node.js), then
         // we won't bother attempting to get a cookie.  If you're using sockets
         // from Node.js and find you need to share a session between multiple
@@ -790,42 +836,47 @@
         // endpoint of the Sails server (or any endpoint that returns a set-cookie header)
         // and then use the cookie value in the `initialConnectionHeaders` option to
         // io.sails.connect()
-        if (typeof window === 'undefined' || typeof window.location === 'undefined') {
+        if (
+          typeof window === "undefined" ||
+          typeof window.location === "undefined"
+        ) {
           return false;
         }
 
         // If `self.url` (aka "target") is falsy, then we don't need to worry about it.
-        if (typeof self.url !== 'string') { return false; }
+        if (typeof self.url !== "string") {
+          return false;
+        }
 
         // Get information about the "target" (`self.url`)
-        var targetProtocol = (function (){
+        var targetProtocol = (function() {
           try {
             targetProtocol = self.url.match(/^([a-z]+:\/\/)/i)[1].toLowerCase();
-          }
-          catch (e) {}
-          targetProtocol = targetProtocol || 'http://';
+          } catch (e) {}
+          targetProtocol = targetProtocol || "http://";
           return targetProtocol;
         })();
-        var isTargetSSL = !!self.url.match('^https');
-        var targetPort = (function (){
+        var isTargetSSL = !!self.url.match("^https");
+        var targetPort = (function() {
           try {
             return self.url.match(/^[a-z]+:\/\/[^:]*:([0-9]*)/i)[1];
-          }
-          catch (e){}
-          return isTargetSSL ? '443' : '80';
+          } catch (e) {}
+          return isTargetSSL ? "443" : "80";
         })();
-        var targetAfterProtocol = self.url.replace(/^([a-z]+:\/\/)/i, '');
-
+        var targetAfterProtocol = self.url.replace(/^([a-z]+:\/\/)/i, "");
 
         // If target protocol is different than the actual protocol,
         // then we'll consider this cross-origin.
-        if (targetProtocol.replace(/[:\/]/g, '') !== window.location.protocol.replace(/[:\/]/g,'')) {
+        if (
+          targetProtocol.replace(/[:\/]/g, "") !==
+          window.location.protocol.replace(/[:\/]/g, "")
+        ) {
           return true;
         }
 
-
         // If target hostname is different than actual hostname, we'll consider this cross-origin.
-        var hasSameHostname = targetAfterProtocol.search(window.location.hostname) === 0;
+        var hasSameHostname =
+          targetAfterProtocol.search(window.location.hostname) === 0;
         if (!hasSameHostname) {
           return true;
         }
@@ -833,7 +884,8 @@
         // If no actual port is explicitly set on the `window.location` object,
         // we'll assume either 80 or 443.
         var isLocationSSL = window.location.protocol.match(/https/i);
-        var locationPort = (window.location.port+'') || (isLocationSSL ? '443' : '80');
+        var locationPort =
+          window.location.port + "" || (isLocationSSL ? "443" : "80");
 
         // Finally, if ports don't match, we'll consider this cross-origin.
         if (targetPort !== locationPort) {
@@ -842,13 +894,10 @@
 
         // Otherwise, it's the same origin.
         return false;
-
       })();
 
-
       // Prepare to start connecting the socket
-      (function selfInvoking (cb){
-
+      (function selfInvoking(cb) {
         // If this is an attempt at a cross-origin or cross-port
         // socket connection via a browswe, send a JSONP request
         // first to ensure that a valid cookie is available.
@@ -864,21 +913,21 @@
         // Figure out the x-origin CORS route
         // (Sails provides a default)
         var xOriginCookieURL = self.url;
-        if (typeof self.useCORSRouteToGetCookie === 'string') {
+        if (typeof self.useCORSRouteToGetCookie === "string") {
           xOriginCookieURL += self.useCORSRouteToGetCookie;
-        }
-        else {
-          xOriginCookieURL += '/__getcookie';
+        } else {
+          xOriginCookieURL += "/__getcookie";
         }
 
         // Make the AJAX request (CORS)
-        jsonp({
-          url: xOriginCookieURL,
-          method: 'GET'
-        }, cb);
-
+        jsonp(
+          {
+            url: xOriginCookieURL,
+            method: "GET"
+          },
+          cb
+        );
       })(function goAheadAndActuallyConnect() {
-
         // Now that we're ready to connect, create a raw underlying Socket
         // using Socket.io and save it as `_raw` (this will start it connecting)
         self._raw = io(self.url, self);
@@ -886,67 +935,78 @@
         // If the low-level transport throws an error _while connecting_, then set the _isConnecting flag
         // to false (since we're no longer connecting with any chance of success anyway).
         // Also, in this case (and in dev mode only) log a helpful message.
-        self._raw.io.engine.transport.on('error', function(err){
-          if (!self._isConnecting) { return; }
+        self._raw.io.engine.transport.on("error", function(err) {
+          if (!self._isConnecting) {
+            return;
+          }
 
           self._isConnecting = false;
 
           // Track this timestamp for use in reconnection messages
           // (only relevant if reconnection is enabled.)
-          self.connectionErrorTimestamp = (new Date()).getTime();
+          self.connectionErrorTimestamp = new Date().getTime();
 
           // Development-only message:
-          consolog('====================================');
-          consolog('The socket was unable to connect.');
-          consolog('The server may be offline, or the');
-          consolog('socket may have failed authorization');
-          consolog('based on its origin or other factors.');
-          consolog('You may want to check the values of');
-          consolog('`sails.config.sockets.onlyAllowOrigins`');
-          consolog('or (more rarely) `sails.config.sockets.beforeConnect`');
-          consolog('in your app.');
-          consolog('More info: https://sailsjs.com/config/sockets');
-          consolog('For help: https://sailsjs.com/support');
-          consolog('');
-          consolog('Technical details:');
+          consolog("====================================");
+          consolog("The socket was unable to connect.");
+          consolog("The server may be offline, or the");
+          consolog("socket may have failed authorization");
+          consolog("based on its origin or other factors.");
+          consolog("You may want to check the values of");
+          consolog("`sails.config.sockets.onlyAllowOrigins`");
+          consolog("or (more rarely) `sails.config.sockets.beforeConnect`");
+          consolog("in your app.");
+          consolog("More info: https://sailsjs.com/config/sockets");
+          consolog("For help: https://sailsjs.com/support");
+          consolog("");
+          consolog("Technical details:");
           consolog(err);
-          consolog('====================================');
+          consolog("====================================");
         });
 
         // Replay event bindings from the eager socket
         self.replay();
 
-
         /**
          * 'connect' event is triggered when the socket establishes a connection
          *  successfully.
          */
-        self.on('connect', function socketConnected() {
+        self.on("connect", function socketConnected() {
           self._isConnecting = false;
           consolog.noPrefix(
-            '\n' +
-            '\n' +
-            // '    |>    ' + '\n' +
-            // '  \\___/  '+️
-            // '\n'+
-             '  |>    Now connected to '+(self.url ? self.url : 'Sails')+'.' + '\n' +
-            '\\___/   For help, see: http://bit.ly/2q0QDpf' + '\n' +
-             '        (using sails.io.js '+io.sails.sdk.platform+' SDK @v'+io.sails.sdk.version+')'+ '\n' +
-            '         Connected at: '+(new Date())+'\n'+
-            '\n'+
-            '\n'+
-            // '\n'+
-            ''
+            "\n" +
+              "\n" +
+              // '    |>    ' + '\n' +
+              // '  \\___/  '+️
+              // '\n'+
+              "  |>    Now connected to " +
+              (self.url ? self.url : "Sails") +
+              "." +
+              "\n" +
+              "\\___/   For help, see: http://bit.ly/2q0QDpf" +
+              "\n" +
+              "        (using sails.io.js " +
+              io.sails.sdk.platform +
+              " SDK @v" +
+              io.sails.sdk.version +
+              ")" +
+              "\n" +
+              "         Connected at: " +
+              new Date() +
+              "\n" +
+              "\n" +
+              "\n" +
+              // '\n'+
+              ""
             // ' ⚓︎ (development mode)'
             // 'e.g. to send a GET request to Sails via WebSockets, run:'+ '\n' +
             // '`io.socket.get("/foo", function serverRespondedWith (body, jwr) { console.log(body); })`'+ '\n' +
           );
         });
 
-        self.on('disconnect', function() {
-
+        self.on("disconnect", function() {
           // Get a timestamp of when the disconnect was detected.
-          self.connectionLostTimestamp = (new Date()).getTime();
+          self.connectionLostTimestamp = new Date().getTime();
 
           // Get a shallow clone of the internal array of response callbacks, in case any of the callbacks mutate it.
           var responseCbs = [].concat(self._responseCbs || []);
@@ -961,11 +1021,16 @@
           // Loop through the callbacks for all in-progress requests, and call them each with an error indicating the disconnect.
           if (responseCbs.length) {
             responseCbs.forEach(function(responseCb) {
-              responseCb(new Error('The socket disconnected before the request completed.'), {
-                body: null,
-                statusCode: 0,
-                headers: {}
-              });
+              responseCb(
+                new Error(
+                  "The socket disconnected before the request completed."
+                ),
+                {
+                  body: null,
+                  statusCode: 0,
+                  headers: {}
+                }
+              );
             });
           }
 
@@ -978,55 +1043,70 @@
             });
           }
 
-          consolog('====================================');
-          consolog('Socket was disconnected from Sails.');
-          consolog('Usually, this is due to one of the following reasons:' + '\n' +
-            ' -> the server ' + (self.url ? self.url + ' ' : '') + 'was taken down' + '\n' +
-            ' -> your browser lost internet connectivity');
-          consolog('====================================');
+          consolog("====================================");
+          consolog("Socket was disconnected from Sails.");
+          consolog(
+            "Usually, this is due to one of the following reasons:" +
+              "\n" +
+              " -> the server " +
+              (self.url ? self.url + " " : "") +
+              "was taken down" +
+              "\n" +
+              " -> your browser lost internet connectivity"
+          );
+          consolog("====================================");
         });
 
-        self.on('reconnecting', function(numAttempts) {
+        self.on("reconnecting", function(numAttempts) {
           consolog(
-            '\n'+
-            '        Socket is trying to reconnect to '+(self.url ? self.url : 'Sails')+'...\n'+
-            '_-|>_-  (attempt #' + numAttempts + ')'+'\n'+
-            '\n'
+            "\n" +
+              "        Socket is trying to reconnect to " +
+              (self.url ? self.url : "Sails") +
+              "...\n" +
+              "_-|>_-  (attempt #" +
+              numAttempts +
+              ")" +
+              "\n" +
+              "\n"
           );
         });
 
-        self.on('reconnect', function(transport, numAttempts) {
+        self.on("reconnect", function(transport, numAttempts) {
           if (!self._isConnecting) {
-            self.on('connect', runRequestQueue.bind(self, self));
+            self.on("connect", runRequestQueue.bind(self, self));
           }
 
           var msSinceLastOffline;
           var numSecsOffline;
-          if (self.connectionLostTimestamp){
-            msSinceLastOffline = ((new Date()).getTime() - self.connectionLostTimestamp);
-            numSecsOffline = (msSinceLastOffline / 1000);
-          }
-          else if (self.connectionErrorTimestamp) {
-            msSinceLastOffline = ((new Date()).getTime() - self.connectionErrorTimestamp);
-            numSecsOffline = (msSinceLastOffline / 1000);
-          }
-          else {
-            msSinceLastOffline = '???';
-            numSecsOffline = '???';
+          if (self.connectionLostTimestamp) {
+            msSinceLastOffline =
+              new Date().getTime() - self.connectionLostTimestamp;
+            numSecsOffline = msSinceLastOffline / 1000;
+          } else if (self.connectionErrorTimestamp) {
+            msSinceLastOffline =
+              new Date().getTime() - self.connectionErrorTimestamp;
+            numSecsOffline = msSinceLastOffline / 1000;
+          } else {
+            msSinceLastOffline = "???";
+            numSecsOffline = "???";
           }
 
           consolog(
-            '\n'+
-             '  |>    Socket reconnected successfully after'+'\n'+
-            '\\___/   being offline at least ' + numSecsOffline + ' seconds.'+'\n'+
-            '\n'
+            "\n" +
+              "  |>    Socket reconnected successfully after" +
+              "\n" +
+              "\\___/   being offline at least " +
+              numSecsOffline +
+              " seconds." +
+              "\n" +
+              "\n"
           );
         });
 
         // 'error' event is triggered if connection can not be established.
         // (usually because of a failed authorization, which is in turn
         // usually due to a missing or invalid cookie)
-        self.on('error', function failedToConnect(err) {
+        self.on("error", function failedToConnect(err) {
           self._isConnecting = false;
           ////////////////////////////////////////////////////////////////////////////////////
           // Note:
@@ -1036,12 +1116,12 @@
           ////////////////////////////////////////////////////////////////////////////////////
 
           consolog(
-            'Failed to connect socket (possibly due to failed `beforeConnect` on server)',
-            'Error:', err
+            "Failed to connect socket (possibly due to failed `beforeConnect` on server)",
+            "Error:",
+            err
           );
         });
       });
-
     };
 
     /**
@@ -1049,12 +1129,12 @@
      *
      * @api public
      */
-    SailsSocket.prototype.reconnect = function (){
+    SailsSocket.prototype.reconnect = function() {
       if (this._isConnecting) {
-        throw new Error('Cannot connect- socket is already connecting');
+        throw new Error("Cannot connect- socket is already connecting");
       }
       if (this.isConnected()) {
-        throw new Error('Cannot connect- socket is already connected');
+        throw new Error("Cannot connect- socket is already connected");
       }
       return this._connect();
     };
@@ -1064,15 +1144,13 @@
      *
      * @api public
      */
-    SailsSocket.prototype.disconnect = function (){
+    SailsSocket.prototype.disconnect = function() {
       this._isConnecting = false;
       if (!this.isConnected()) {
-        throw new Error('Cannot disconnect- socket is already disconnected');
+        throw new Error("Cannot disconnect- socket is already disconnected");
       }
       return this._raw.disconnect();
     };
-
-
 
     /**
      * isConnected
@@ -1081,14 +1159,13 @@
      *                   communicate w/ the server.
      */
 
-    SailsSocket.prototype.isConnected = function () {
+    SailsSocket.prototype.isConnected = function() {
       if (!this._raw) {
         return false;
       }
 
       return !!this._raw.connected;
     };
-
 
     /**
      * isConnecting
@@ -1097,7 +1174,7 @@
      *                   to the server.
      */
 
-    SailsSocket.prototype.isConnecting = function () {
+    SailsSocket.prototype.isConnecting = function() {
       return this._isConnecting;
     };
 
@@ -1117,7 +1194,7 @@
      * [replay description]
      * @return {[type]} [description]
      */
-    SailsSocket.prototype.replay = function (){
+    SailsSocket.prototype.replay = function() {
       var self = this;
 
       // Pass events and a reference to the request queue
@@ -1130,8 +1207,8 @@
 
       // Bind a one-time function to run the request queue
       // when the self._raw connects.
-      if ( !self.isConnected() ) {
-        self._raw.once('connect', runRequestQueue.bind(self, self));
+      if (!self.isConnected()) {
+        self._raw.once("connect", runRequestQueue.bind(self, self));
       }
       // Or run it immediately if self._raw is already connected
       else {
@@ -1141,7 +1218,6 @@
       return self;
     };
 
-
     /**
      * Chainable method to bind an event to the socket.
      *
@@ -1149,8 +1225,7 @@
      * @param  {Function} fn     [event handler function]
      * @return {SailsSocket}
      */
-    SailsSocket.prototype.on = function (evName, fn){
-
+    SailsSocket.prototype.on = function(evName, fn) {
       // Bind the event to the raw underlying socket if possible.
       if (this._raw) {
         this._raw.on(evName, fn);
@@ -1160,8 +1235,7 @@
       // Otherwise queue the event binding.
       if (!this.eventQueue[evName]) {
         this.eventQueue[evName] = [fn];
-      }
-      else {
+      } else {
         this.eventQueue[evName].push(fn);
       }
 
@@ -1175,8 +1249,7 @@
      * @param  {Function} fn     [event handler function]
      * @return {SailsSocket}
      */
-    SailsSocket.prototype.off = function (evName, fn){
-
+    SailsSocket.prototype.off = function(evName, fn) {
       // Unbind the event from the raw underlying socket if possible.
       if (this._raw) {
         this._raw.off(evName, fn);
@@ -1191,14 +1264,12 @@
       return this;
     };
 
-
     /**
      * Chainable method to unbind all events from the socket.
      *
      * @return {SailsSocket}
      */
-    SailsSocket.prototype.removeAllListeners = function (){
-
+    SailsSocket.prototype.removeAllListeners = function() {
       // Bind the event to the raw underlying socket if possible.
       if (this._raw) {
         this._raw.removeAllListeners();
@@ -1213,13 +1284,14 @@
 
     /**
      * @description Make the API call easier
-     * @param {*} url 
-     * @param {*} data 
-     * @param {*} verb 
+     * @param {*} url
+     * @param {*} data
+     * @param {*} verb
      * @returns {Promise}
      */
     function PromiseMe(url, data, verb) {
-      let $$ = io.socket;
+      var $$ = io.socket;
+      $$.isRequesting = true;
       return new Promise((resolve, reject) => {
         var serializeObj = {};
         // change the argin verb for data ...
@@ -1229,16 +1301,18 @@
           : (serializeObj["data"] = data);
         serializeObj.url = url;
         serializeObj.method = verb;
-        $$.request(serializeObj, (data, jwr)/** : Promise<any> */ => {
+        $$.request(serializeObj, (data, jwr) /** : Promise<any> */ => {
           // interceptors can be used here :smile:
           if (jwr.error) {
-            reject(jwr)
-          } else { 
-            resolve([data, jwr]) };
+            $$.isRequesting = false;
+            reject(jwr);
+          } else {
+            $$.isRequesting = false;
+            resolve([data, jwr]);
+          }
         });
       });
     }
-
 
     /**
      * Simulate a POST request to sails
@@ -1251,7 +1325,7 @@
      * @returns {Promise}     ::    where promise is ([data, jwr])
      */
 
-    SailsSocket.prototype.post = function (url, data) {
+    SailsSocket.prototype.post = function(url, data) {
       return PromiseMe(url, data, "post");
     };
 
@@ -1265,10 +1339,9 @@
      * @param {Object} data   ::    parameters to send with the request [optional]
      * @returns {Promise}     ::    where promise is ([data, jwr])
      */
-    SailsSocket.prototype.get = function (url, data) {
+    SailsSocket.prototype.get = function(url, data) {
       return PromiseMe(url, data, "get");
     };
-
 
     /**
      * Simulate a PUT request to sails
@@ -1281,11 +1354,11 @@
      * @returns {Promise}     ::    where promise is ([data, jwr])
      */
 
-    SailsSocket.prototype.put = function (url, data) {
+    SailsSocket.prototype.put = function(url, data) {
       return PromiseMe(url, data, "put");
     };
 
-     /**
+    /**
      * Simulate a PATCH request to sails
      * e.g.
      *    `socket.patch('/event/3', changedFields)`
@@ -1295,7 +1368,7 @@
      * @param {Object} data   ::    parameters to send with the request [optional]
      * @returns {Promise}     ::    where promise is ([data, jwr])
      */
-    SailsSocket.prototype.patch = function (url, data) {
+    SailsSocket.prototype.patch = function(url, data) {
       return PromiseMe(url, data, "patch");
     };
 
@@ -1310,12 +1383,9 @@
      * @returns {Promise}     ::    where promise is ([data, jwr])
      */
 
-    SailsSocket.prototype.delete = function (url, data) {
+    SailsSocket.prototype.delete = function(url, data) {
       return PromiseMe(url, data, "delete");
     };
-
-
-
 
     /**
      * Simulate an HTTP request to sails
@@ -1340,54 +1410,67 @@
      */
 
     SailsSocket.prototype.request = function(options, cb) {
-
       var usage =
-      'Usage:\n'+
-      'socket.request( options, [fnToCallWhenComplete] )\n\n'+
-      'options.url :: e.g. "/foo/bar"'+'\n'+
-      'options.method :: e.g. "get", "post", "put", or "delete", etc.'+'\n'+
-      'options.params :: e.g. { emailAddress: "mike@example.com" }'+'\n'+
-      'options.headers :: e.g. { "x-my-custom-header": "some string" }';
+        "Usage:\n" +
+        "socket.request( options, [fnToCallWhenComplete] )\n\n" +
+        'options.url :: e.g. "/foo/bar"' +
+        "\n" +
+        'options.method :: e.g. "get", "post", "put", or "delete", etc.' +
+        "\n" +
+        'options.params :: e.g. { emailAddress: "mike@example.com" }' +
+        "\n" +
+        'options.headers :: e.g. { "x-my-custom-header": "some string" }';
       // Old usage:
       // var usage = 'Usage:\n socket.'+(options.method||'request')+'('+
       //   ' destinationURL, [dataToSend], [fnToCallWhenComplete] )';
 
-
       // Validate options and callback
-      if (typeof cb !== 'undefined' && typeof cb !== 'function') {
-        throw new Error('Invalid callback function!\n' + usage);
+      if (typeof cb !== "undefined" && typeof cb !== "function") {
+        throw new Error("Invalid callback function!\n" + usage);
       }
-      if (typeof options !== 'object' || typeof options.url !== 'string') {
-        throw new Error('Invalid or missing URL!\n' + usage);
+      if (typeof options !== "object" || typeof options.url !== "string") {
+        throw new Error("Invalid or missing URL!\n" + usage);
       }
-      if (options.method && typeof options.method !== 'string') {
-        throw new Error('Invalid `method` provided (should be a string like "post" or "put")\n' + usage);
+      if (options.method && typeof options.method !== "string") {
+        throw new Error(
+          'Invalid `method` provided (should be a string like "post" or "put")\n' +
+            usage
+        );
       }
-      if (options.headers && typeof options.headers !== 'object') {
-        throw new Error('Invalid `headers` provided (should be a dictionary with string values)\n' + usage);
+      if (options.headers && typeof options.headers !== "object") {
+        throw new Error(
+          "Invalid `headers` provided (should be a dictionary with string values)\n" +
+            usage
+        );
       }
-      if (options.params && typeof options.params !== 'object') {
-        throw new Error('Invalid `params` provided (should be a dictionary with JSON-serializable values)\n' + usage);
+      if (options.params && typeof options.params !== "object") {
+        throw new Error(
+          "Invalid `params` provided (should be a dictionary with JSON-serializable values)\n" +
+            usage
+        );
       }
-      if (options.data && typeof options.data !== 'object') {
-        throw new Error('Invalid `data` provided (should be a dictionary with JSON-serializable values)\n' + usage);
+      if (options.data && typeof options.data !== "object") {
+        throw new Error(
+          "Invalid `data` provided (should be a dictionary with JSON-serializable values)\n" +
+            usage
+        );
       }
 
       // Accept either `params` or `data` for backwards compatibility (but not both!)
       if (options.data && options.params) {
-        throw new Error('Cannot specify both `params` and `data`!  They are aliases of each other.\n' + usage);
-      }
-      else if (options.data) {
+        throw new Error(
+          "Cannot specify both `params` and `data`!  They are aliases of each other.\n" +
+            usage
+        );
+      } else if (options.data) {
         options.params = options.data;
         delete options.data;
       }
 
-
       // If this socket is not connected yet, queue up this request
       // instead of sending it.
       // (so it can be replayed when the socket comes online.)
-      if ( ! this.isConnected() ) {
-
+      if (!this.isConnected()) {
         // If no queue array exists for this socket yet, create it.
         this.requestQueue = this.requestQueue || [];
         this.requestQueue.push([options, cb]);
@@ -1403,15 +1486,14 @@
       // Build a simulated request object
       // (and sanitize/marshal options along the way)
       var requestCtx = {
-
-        method: (options.method || 'get').toLowerCase(),
+        method: (options.method || "get").toLowerCase(),
 
         headers: options.headers,
 
         data: options.params || options.data || {},
 
         // Remove trailing slashes and spaces to make packets smaller.
-        url: options.url.replace(/^(.+)\/*\s*$/, '$1'),
+        url: options.url.replace(/^(.+)\/*\s*$/, "$1"),
 
         cb: cb
       };
@@ -1433,7 +1515,7 @@
       }
 
       // Merge global headers in, if there are any.
-      if (this.headers && 'object' === typeof this.headers) {
+      if (this.headers && "object" === typeof this.headers) {
         for (var header in this.headers) {
           if (!options.headers.hasOwnProperty(header)) {
             options.headers[header] = this.headers[header];
@@ -1445,8 +1527,6 @@
       _emitFrom(this, requestCtx);
     };
 
-
-
     /**
      * Socket.prototype._request
      *
@@ -1457,14 +1537,10 @@
      * @param  {Function} cb      [description]
      */
     SailsSocket.prototype._request = function(options, cb) {
-      throw new Error('`_request()` was a private API deprecated as of v0.11 of the sails.io.js client. Use `.request()` instead.');
+      throw new Error(
+        "`_request()` was a private API deprecated as of v0.11 of the sails.io.js client. Use `.request()` instead."
+      );
     };
-
-
-
-
-
-
 
     //  ██╗ ██████╗    ███████╗ █████╗ ██╗██╗     ███████╗
     //  ██║██╔═══██╗   ██╔════╝██╔══██╗██║██║     ██╔════╝
@@ -1478,12 +1554,10 @@
     // prevented by setting `io.sails.autoConnect` in an inline script
     // directly after the script tag which loaded this file).
 
-
     //  ┌─┐┌─┐┌┬┐  ┬ ┬┌─┐  ╔╦╗╔═╗╔═╗╔═╗╦ ╦╦ ╔╦╗╔═╗  ┌─┐┌─┐┬─┐  ┬┌─┐ ┌─┐┌─┐┬┬  ┌─┐
     //  └─┐├┤  │   │ │├─┘   ║║║╣ ╠╣ ╠═╣║ ║║  ║ ╚═╗  ├┤ │ │├┬┘  ││ │ └─┐├─┤││  └─┐
     //  └─┘└─┘ ┴   └─┘┴    ═╩╝╚═╝╚  ╩ ╩╚═╝╩═╝╩ ╚═╝  └  └─┘┴└─  ┴└─┘o└─┘┴ ┴┴┴─┘└─┘
     io.sails = {
-
       // Whether to automatically connect a socket and save it as `io.socket`.
       autoConnect: true,
 
@@ -1501,23 +1575,23 @@
       // that ends in `*.min.js` or '#production', or if the conventional
       // `SAILS_LOCALS` global is set with an `_environment` of "production"
       // or "staging".  (This setting may also be manually overridden.)
-      environment: (
+      environment:
         urlThisScriptWasFetchedFrom.match(/(\#production|\.min\.js)/g) ||
-        (
-          typeof window === 'object' && window &&
-          typeof window.SAILS_LOCALS === 'object' && window.SAILS_LOCALS &&
-          (window.SAILS_LOCALS._environment === 'staging' || window.SAILS_LOCALS._environment === 'production')
-        )
-      )? 'production' : 'development',
+        (typeof window === "object" &&
+          window &&
+          typeof window.SAILS_LOCALS === "object" &&
+          window.SAILS_LOCALS &&
+          (window.SAILS_LOCALS._environment === "staging" ||
+            window.SAILS_LOCALS._environment === "production"))
+          ? "production"
+          : "development",
 
       // The version of this sails.io.js client SDK
       sdk: SDK_INFO,
 
       // Transports to use when communicating with the server, in the order they will be tried
-      transports: ['websocket']
+      transports: ["websocket"]
     };
-
-
 
     //  ┌─┐─┐ ┬┌┬┐┌─┐┌┐┌┌┬┐  ┬┌─┐ ┌─┐┌─┐┬┬  ┌─┐  ┌┬┐┌─┐┌─┐┌─┐┬ ┬┬ ┌┬┐┌─┐
     //  ├┤ ┌┴┬┘ │ ├┤ │││ ││  ││ │ └─┐├─┤││  └─┐   ││├┤ ├┤ ├─┤│ ││  │ └─┐
@@ -1532,8 +1606,8 @@
     // Now fold in config provided as HTML attributes on the script tag:
     // (note that if `io.sails.*` is changed after this script, those changes
     //  will still take precedence)
-    CONFIGURABLE_VIA_HTML_ATTR.forEach(function (configKey){
-      if (typeof scriptTagConfig[configKey] !== 'undefined') {
+    CONFIGURABLE_VIA_HTML_ATTR.forEach(function(configKey) {
+      if (typeof scriptTagConfig[configKey] !== "undefined") {
         io.sails[configKey] = scriptTagConfig[configKey];
       }
     });
@@ -1543,9 +1617,6 @@
     // since the new strategy is easier to reason about.  Also, it would allow us
     // to remove the timeout below someday.
     //////////////////////////////////////////////////////////////////////////////
-
-
-
 
     //  ┬┌─┐ ┌─┐┌─┐┬┬  ┌─┐ ╔═╗╔═╗╔╗╔╔╗╔╔═╗╔═╗╔╦╗  /  \
     //  ││ │ └─┐├─┤││  └─┐ ║  ║ ║║║║║║║║╣ ║   ║  /   /
@@ -1562,9 +1633,8 @@
      * @return {Socket}
      */
     io.sails.connect = function(url, opts) {
-
       // Make URL optional
-      if ('object' === typeof url) {
+      if ("object" === typeof url) {
         opts = url;
         url = null;
       }
@@ -1580,11 +1650,6 @@
       socket._connect();
       return socket;
     };
-
-
-
-
-
 
     //  ██╗ ██████╗    ███████╗ ██████╗  ██████╗██╗  ██╗███████╗████████╗
     //  ██║██╔═══██╗   ██╔════╝██╔═══██╗██╔════╝██║ ██╔╝██╔════╝╚══██╔══╝
@@ -1602,7 +1667,6 @@
     // first cycle of the event loop.
     //
 
-
     // Build `io.socket` so it exists
     // (note that this DOES NOT start the connection process)
     io.socket = new SailsSocket();
@@ -1612,7 +1676,6 @@
     // But in the mean time, this eager socket will be queue events bound by the user
     // before the first cycle of the event loop (using `.on()`), which will later
     // be rebound on the raw underlying socket.
-
 
     //  ┌─┐┌─┐┌┬┐  ┌─┐┬ ┬┌┬┐┌─┐   ┌─┐┌─┐┌┐┌┌┐┌┌─┐┌─┐┌┬┐  ┌┬┐┬┌┬┐┌─┐┬─┐
     //  └─┐├┤  │   ├─┤│ │ │ │ │───│  │ │││││││├┤ │   │    │ ││││├┤ ├┬┘
@@ -1624,8 +1687,10 @@
     // Indicate that the autoConnect timer has started.
     io.socket._mightBeAboutToAutoConnect = true;
 
-    setTimeout(function() {
+    // Indicate that a request is been sent.
+    io.socket.isRequesting = false;
 
+    setTimeout(function() {
       // Indicate that the autoConect timer fired.
       io.socket._mightBeAboutToAutoConnect = false;
 
@@ -1637,10 +1702,7 @@
 
       // consolog('Eagerly auto-connecting socket to Sails... (requests will be queued in the mean-time)');
       io.socket._connect();
-
-
     }, 0); // </setTimeout>
-
 
     // Return the `io` object.
     return io;
@@ -1651,9 +1713,6 @@
   ///// </bunches of private function definitions, constructors, and methods>
   /////////////////////////////////////////////////////////////////////////////////
 
-
-
-
   //  ███████╗██╗  ██╗██████╗  ██████╗ ███████╗███████╗    ███████╗██████╗ ██╗  ██╗
   //  ██╔════╝╚██╗██╔╝██╔══██╗██╔═══██╗██╔════╝██╔════╝    ██╔════╝██╔══██╗██║ ██╔╝
   //  █████╗   ╚███╔╝ ██████╔╝██║   ██║███████╗█████╗      ███████╗██║  ██║█████╔╝
@@ -1662,18 +1721,16 @@
   //  ╚══════╝╚═╝  ╚═╝╚═╝      ╚═════╝ ╚══════╝╚══════╝    ╚══════╝╚═════╝ ╚═╝  ╚═╝
   //
 
-
   // Add CommonJS support to allow this client SDK to be used from Node.js.
-  if (SDK_INFO.platform === 'node') {
+  if (SDK_INFO.platform === "node") {
     module.exports = SailsIOClient;
   }
   // Add AMD support, registering this client SDK as an anonymous module.
-  else if (typeof define === 'function' && define.amd) {
+  else if (typeof define === "function" && define.amd) {
     define([], function() {
       return SailsIOClient;
     });
-  }
-  else {
+  } else {
     // Otherwise, try to instantiate the client using the global `io`:
     SailsIOClient();
 
@@ -1682,5 +1739,4 @@
     // (e.g. to prevent pollution of the global namespace), you can replace the global
     // `io` with your own `io` instance above.
   }
-
 })();
